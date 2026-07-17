@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
@@ -13,7 +12,7 @@
         <image:image>
             <image:loc>https://rajvvv.github.io/web/rajvardhan-wakharade.jpg</image:loc>
             <image:title>Rajvardhan Wakharade</image:title>
-            <image:caption>Rajvardhan Wakharade — Software Engineer & Application Security Student</image:caption>
+            <image:caption>Rajvardhan Wakharade — Software Engineer &amp; Application Security Student</image:caption>
         </image:image>
 
         <image:image>
