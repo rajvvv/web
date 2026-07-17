@@ -5,37 +5,37 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
     <url>
-        <loc>https://rajvardhan.gt.tc/</loc>
+        <loc>https://rajvvv.github.io/web/</loc>
         <lastmod>2026-07-17</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
 
         <image:image>
-            <image:loc>https://rajvardhan.gt.tc/rajvardhan-wakharade.jpg</image:loc>
+            <image:loc>https://rajvvv.github.io/web/rajvardhan-wakharade.jpg</image:loc>
             <image:title>Rajvardhan Wakharade</image:title>
             <image:caption>Rajvardhan Wakharade — Software Engineer & Application Security Student</image:caption>
         </image:image>
 
         <image:image>
-            <image:loc>https://rajvardhan.gt.tc/images/rajvardhan-wakharade-profile.jpg</image:loc>
+            <image:loc>https://rajvvv.github.io/web/images/rajvardhan-wakharade-profile.jpg</image:loc>
             <image:title>Rajvardhan Wakharade Profile Photo</image:title>
             <image:caption>Professional profile photo of Rajvardhan Wakharade</image:caption>
         </image:image>
 
         <image:image>
-            <image:loc>https://rajvardhan.gt.tc/images/raj-wakharade-pune.jpg</image:loc>
+            <image:loc>https://rajvvv.github.io/web/images/raj-wakharade-pune.jpg</image:loc>
             <image:title>Raj Wakharade</image:title>
             <image:caption>Raj Wakharade, Pune-based Software Engineer</image:caption>
         </image:image>
 
         <image:image>
-            <image:loc>https://rajvardhan.gt.tc/rajvardhan-wakharde.jpg</image:loc>
+            <image:loc>https://rajvvv.github.io/web/rajvardhan-wakharde.jpg</image:loc>
             <image:title>Rajvardhan Wakharde</image:title>
             <image:caption>Professional portrait of Rajvardhan Wakharde</image:caption>
         </image:image>
 
         <image:image>
-            <image:loc>https://rajvardhan.gt.tc/raj-wakharde.jpg</image:loc>
+            <image:loc>https://rajvvv.github.io/web/raj-wakharde.jpg</image:loc>
             <image:title>Raj Wakharde</image:title>
             <image:caption>Raj Wakharde developer portrait</image:caption>
         </image:image>
