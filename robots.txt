@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rajvardhan.gt.tc/sitemap.xml
+Sitemap: https://rajvvv.github.io/web/sitemap.xml
