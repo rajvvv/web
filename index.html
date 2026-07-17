@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajvardhan Wakharade — Software Engineer, Application Security</title>
+    <meta name="description" content="Rajvardhan Wakharade — CSE student at Vishwakarma University building toward Application Security. Full-stack builder, PortSwigger Web Security Academy writeups, Pune.">
+    <meta name="keywords" content="Rajvardhan Wakharade, Raj Wakharde, Vishwakarma University, application security, appsec engineer, web security, software engineer, CSE student, Pune">
+    <meta name="author" content="Rajvardhan Wakharade">
+
+    <link rel="canonical" href="https://rajvardhan.gt.tc/">
+
+    <meta property="og:title" content="Rajvardhan Wakharade — Software Engineer, Application Security">
+    <meta property="og:description" content="Building software, then learning how to break it. Third-year CSE @ Vishwakarma University, headed toward Application Security.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rajvardhan.gt.tc/">
+    <meta property="og:image" content="https://rajvardhan.gt.tc/rajvardhan-wakharade.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rajvardhan Wakharade — Software Engineer, Application Security">
+    <meta name="twitter:description" content="Building software, then learning how to break it. Third-year CSE @ Vishwakarma University, headed toward Application Security.">
+    <meta name="twitter:image" content="https://rajvardhan.gt.tc/rajvardhan-wakharade.jpg">
+
+    <script>
+        (function() {
+            var stored = null;
+            try { stored = localStorage.getItem('theme'); } catch (e) {}
+            var theme = stored ? stored : 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.classList.add('js');
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="rajvardhan-wakharade.jpg" type="image/jpeg">
+
+    <link rel="me" href="https://www.linkedin.com/in/rajvardhan-w/">
+    <link rel="me" href="https://github.com/rajvvv">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rajvardhan Wakharade",
+      "alternateName": ["Raj Wakharde", "Rajvardhan Wakharde", "Rajvvv"],
+      "url": "https://rajvardhan.gt.tc/",
+      "image": [
+        "https://rajvardhan.gt.tc/rajvardhan-wakharade.jpg",
+        "https://rajvardhan.gt.tc/images/rajvardhan-wakharade-profile.jpg",
+        "https://rajvardhan.gt.tc/images/raj-wakharade-pune.jpg",
+        "https://rajvardhan.gt.tc/images/rajvardhan-wakharde.jpg",
+        "https://rajvardhan.gt.tc/images/raj-wakharde.jpg"
+      ],
+      "jobTitle": "Software Engineer",
+      "knowsAbout": ["Application Security", "Web Security", "Full-Stack Development", "Python", "JavaScript"],
+      "alumniOf": "Vishwakarma University",
+      "address": { "@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN" },
+      "sameAs": [
+        "https://www.linkedin.com/in/rajvardhan-w/",
+        "https://github.com/rajvvv"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo"><span class="cursor">rvw</span>_</a>
+
+            <div class="nav-right">
+                <div class="nav-links" id="navLinks">
+                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#security" class="nav-link">Security</a>
+                    <a href="#journey" class="nav-link">Journey</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="resume.pdf" class="nav-link nav-link--highlight" target="_blank" rel="noopener">Resume</a>
+                </div>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon theme-icon--light">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 4a1 1 0 011 1v1a1 1 0 11-2 0V5a1 1 0 011-1zm0 14a5 5 0 100-10 5 5 0 000 10zm8-6a1 1 0 011 1 1 1 0 01-1 1h-1a1 1 0 110-2h1zM4 12a1 1 0 01-1 1H2a1 1 0 110-2h1a1 1 0 011 1zm14.36-6.36a1 1 0 011.42 1.42l-.71.7a1 1 0 11-1.42-1.41l.71-.71zM6.34 17.66a1 1 0 011.42 1.42l-.7.7a1 1 0 11-1.42-1.41l.7-.71zm11.32 0l.7.7a1 1 0 01-1.41 1.42l-.71-.7a1 1 0 011.42-1.42zM5.63 5.64a1 1 0 011.42-1.42l.7.71A1 1 0 116.34 6.34l-.71-.7zM12 20a1 1 0 011 1v0a1 1 0 11-2 0v0a1 1 0 011-1z"/></svg>
+                    </span>
+                    <span class="theme-icon theme-icon--dark">
+                        <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M20.742 13.045a8.088 8.088 0 01-2.077.273c-4.508 0-8.166-3.658-8.166-8.166 0-1.31.31-2.55.86-3.65a.5.5 0 00-.62-.68A10.098 10.098 0 002 11c0 5.523 4.477 10 10 10a10.1 10.1 0 009.178-5.874.5.5 0 00-.436-.081z"/></svg>
+                    </span>
+                </button>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+        <div class="hero-inner hero-grid">
+            <div class="hero-text">
+                <p class="eyebrow" data-reveal><span class="prompt">//</span> cse student, headed toward appsec — pune, india</p>
+                <h1 class="hero-title" data-split-text>
+                    <span class="line">Rajvardhan</span>
+                    <span class="line">Wakharade<span class="hero-cursor">_</span></span>
+                </h1>
+                <p class="hero-sub" data-reveal>I build full-stack software — a payments system a dance academy runs on, a forecasting tool for EV charging demand. Now I'm putting that same hands-on habit toward Application Security.</p>
+                <div class="hero-actions" data-reveal>
+                    <a href="#work" class="btn btn-primary">See the work</a>
+                    <a href="resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Resume</a>
+                </div>
+                <p class="hero-meta" data-reveal><span class="dot"></span> Third-year CSE, Vishwakarma University — open to internships &amp; freelance work</p>
+            </div>
+            <div class="hero-photo" data-reveal data-reveal-delay="100">
+                <div class="hero-photo-frame">
+                    <img src="rajvardhan-wakharade.jpg" alt="Rajvardhan Wakharade, computer science engineering student at Vishwakarma University, Pune" width="480" height="480" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Selected Work -->
+    <section class="section work" id="work">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="eyebrow"><span class="prompt">//</span> selected work</span>
+                <h2 class="section-title">What I've shipped</h2>
+                <p class="section-sub">Four projects that mattered enough to see through — a client system, two independent builds, and one still in progress. Knowing how these get built is exactly what makes finding where they break useful.</p>
+            </div>
+
+            <div class="work-list">
+
+                <article class="project project--featured" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">Client project</span>
+                            <span class="project-mono">dance-academy/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">Dance Academy Management System</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>Fire &amp; Ash Dance Studio ran enrollment, batches, and fees off spreadsheets and memory.</dd></div>
+                            <div><dt>Solution</dt><dd>A full-stack platform with secure auth, receipt generation, and an installable offline-capable PWA.</dd></div>
+                            <div><dt>Impact</dt><dd>Deployed and used by the studio every day, with updates shipped as they need them.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">Full Stack</span>
+                            <span class="project-tag">Auth &amp; Payments</span>
+                            <span class="project-tag">PWA</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">In active use</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">Personal project</span>
+                            <span class="project-mono">ev-forecast/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">EV Infrastructure Forecast Engine</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>India's EV charging infrastructure is growing without much visibility into where demand actually outpaces supply.</dd></div>
+                            <div><dt>Solution</dt><dd>A geospatial dashboard mapping EV demand against charging station gaps across Indian cities.</dd></div>
+                            <div><dt>Impact</dt><dd>Turns public CSV data into a live map anyone can read in seconds, no spreadsheet required.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Leaflet.js</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/rajvvv/EV-Forecasting" target="_blank" rel="noopener">GitHub ↗</a>
+                            <a href="https://ev-forecasting.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">Personal project</span>
+                            <span class="project-mono">neet-study-partner/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">NEET Study Partner</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>NEET aspirants take hundreds of practice tests but rarely see their own patterns of improvement.</dd></div>
+                            <div><dt>Solution</dt><dd>A web app that logs every test, tracks accuracy over time, and generates fresh questions on demand.</dd></div>
+                            <div><dt>Impact</dt><dd>Gives students a clean, personal view of where they're actually improving — not just a score.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Question-gen API</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">In progress</span>
+                            <a href="https://neetapp.gt.tc/?i=1" target="_blank" rel="noopener">Live demo ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">Personal project</span>
+                            <span class="project-mono">krishiniti/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">KrishiNiti — Farm Finance Simulator</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>Financial literacy tools for farmers rarely reflect the real risk of a bad monsoon or a bad loan.</dd></div>
+                            <div><dt>Solution</dt><dd>A mobile simulation of a 10-season farming cycle, with weather shocks, credit scoring, and government schemes built in.</dd></div>
+                            <div><dt>Impact</dt><dd>Multilingual with native text-to-speech, so it works for people who don't read English comfortably.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Capacitor</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">Completed</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="github-banner" data-reveal id="githubBanner">
+                <div class="github-banner-inner">
+                    <div class="github-banner-content">
+                        <span class="github-banner-mono">github.com/rajvvv</span>
+                        <p class="github-banner-text">Plus <span class="github-count" id="githubRepoCount">—</span> other public repos — experiments and things I built just to learn.</p>
+                    </div>
+                    <a href="https://github.com/rajvvv" target="_blank" rel="noopener" class="github-banner-link">Explore ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SECURITY RESEARCH
+         To add a new writeup/lab entry: duplicate one project card
+         block below (between the TEMPLATE START/END comments), edit
+         the text, and paste it above the closing div of .work-list.
+         Same card pattern as the Work section above — nothing new to learn.
+    ============================================================= -->
+    <section class="section security" id="security">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="eyebrow"><span class="prompt">//</span> security research</span>
+                <h2 class="section-title">Where I'm headed</h2>
+                <p class="section-sub">Application Security first, then Cloud Security, then DevSecOps — in that order, with a clear bar to clear before moving to the next. This is the hands-on work behind that plan.</p>
+            </div>
+
+            <div class="work-list">
+
+                <!-- TEMPLATE START: duplicate this block for each new writeup collection -->
+                <article class="project project--featured" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">In progress</span>
+                            <span class="project-mono">portswigger-writeups/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">PortSwigger Web Security Academy — Writeups</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>Reading about a vulnerability class and being able to exploit one under exam conditions are very different skills.</dd></div>
+                            <div><dt>Solution</dt><dd>Working through the Academy's labs in Burp Suite and writing up each one — the request, the payload, and why the fix works.</dd></div>
+                            <div><dt>Impact</dt><dd>Server-Side Vulnerabilities path complete (15 labs). Client-side and advanced topics next.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL Injection</span>
+                            <span class="project-tag">SSRF</span>
+                            <span class="project-tag">Access Control</span>
+                            <span class="project-tag">Authentication</span>
+                            <span class="project-tag">Business Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <!-- EDIT: replace # with your writeups repo URL once it's public -->
+                            <a href="#" target="_blank" rel="noopener">GitHub writeups ↗</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- TEMPLATE END -->
+
+                <article class="project" data-reveal>
+                    <div class="project-media">
+                        <div class="project-media-inner">
+                            <span class="project-badge">Home lab</span>
+                            <span class="project-mono">appsec-toolkit/</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-name">Testing Environment</h3>
+                        <dl class="project-pattern">
+                            <div><dt>Problem</dt><dd>Reading a tool's docs isn't the same as having it configured and ready when a lab needs it.</dd></div>
+                            <div><dt>Solution</dt><dd>Kali Linux in VirtualBox as a dedicated testing box, running Burp Suite Community with Turbo Intruder for scripted attacks and sqlmap for SQLi validation.</dd></div>
+                            <div><dt>Impact</dt><dd>A repeatable setup — every new lab starts from the same known-good environment.</dd></div>
+                        </dl>
+                        <div class="project-tags">
+                            <span class="project-tag">Kali Linux</span>
+                            <span class="project-tag">Burp Suite</span>
+                            <span class="project-tag">Turbo Intruder</span>
+                            <span class="project-tag">sqlmap</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-status">Ongoing</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="eyebrow"><span class="prompt">//</span> journey</span>
+                <h2 class="section-title">How I got here</h2>
+            </div>
+
+            <!-- To add a milestone: copy one .timeline-item block and place it in order. -->
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2024</span>
+                    <div class="timeline-content">
+                        <h3>Started programming</h3>
+                        <p>Picked up C and the web basics on my own, then made it formal through Infosys Springboard and LinkedIn Learning tracks in programming fundamentals and web development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2025</span>
+                    <div class="timeline-content">
+                        <h3>Placed 2nd at a university hackathon</h3>
+                        <p>First real test under a clock, building something that had to work in front of judges, not just pass on my machine.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2025</span>
+                    <div class="timeline-content">
+                        <h3>Two internships</h3>
+                        <p>AI &amp; Data Analytics with AICTE–Shell India (Edunet), then a Data Science stint at Codsoft — applying analysis and ML to problems I didn't pick myself, which turned out to be the point.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2025–26</span>
+                    <div class="timeline-content">
+                        <h3>Real projects, real users</h3>
+                        <p>Shipped the EV forecast engine, KrishiNiti, and the NEET study tracker — then took on the Dance Academy system as an actual client project with a person depending on it working.</p>
+                    </div>
+                </div>
+                <!-- <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">2026</span>
+                    <div class="timeline-content">
+                        <h3>Mapped a real roadmap</h3>
+                        <p>Compared cybersecurity against data engineering, MLOps, and backend roles on the things that actually matter to me — DSA load, competition, and how replaceable the work is by AI. Landed on a sequential path: Application Security, then Cloud Security, then DevSecOps.</p>
+                    </div>
+                </div> -->
+                <div class="timeline-item" data-reveal>
+                    <span class="timeline-year">Today</span>
+                    <div class="timeline-content">
+                        <h3>Third year, building toward AppSec</h3>
+                        <p>Coursework at Vishwakarma University, PortSwigger Academy labs, and client work running in parallel. Expected to graduate May 2028.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="eyebrow"><span class="prompt">//</span> about</span>
+                <h2 class="section-title">How I think</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text" data-reveal>
+                    <p class="lead">For a while I was building without much of a plan. Now I have one — and it's why this site looks the way it does.</p>
+                    <p>Everything in Selected Work happened before the plan existed. It's still here because it's real proof I can ship systems people depend on, and that turns out to matter a lot in security — you can't secure what you don't understand how to build.</p>
+                    <p>The plan itself: Application Security first, since it's the most direct use of that instinct. Cloud Security and DevSecOps after, once AppSec gives me the foundation both of those actually need.</p>
+                </div>
+                <div class="about-toolkit" data-reveal data-reveal-delay="100">
+                    <span class="toolkit-label">Build</span>
+                    <div class="toolkit-list">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>C++</span>
+                        <span>Node JS</span>
+                        <span>React</span>
+                        <span>Django / FastAPI</span>
+                        <span>SQL</span>
+                        <span>Git</span>
+                    </div>
+                    <span class="toolkit-label toolkit-label--second">Break</span>
+                    <div class="toolkit-list">
+                        <span>Burp Suite</span>
+                        <span>Turbo Intruder</span>
+                        <span>sqlmap</span>
+                        <span>Kali Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-inner" data-reveal>
+                <h2 class="contact-title">Let's build something useful.</h2>
+                <p class="contact-sub">Open to internships, freelance work, and anything security-adjacent that needs someone who checks whether the thing actually holds up.</p>
+                <div class="contact-channels">
+                    <a href="mailto:rajwakharde45@gmail.com" class="channel">
+                        <span class="channel-label">Email</span>
+                        <span class="channel-value">rajwakharde45@gmail.com ↗</span>
+                    </a>
+                    <a href="https://github.com/rajvvv" target="_blank" rel="noopener" class="channel">
+                        <span class="channel-label">GitHub</span>
+                        <span class="channel-value">@rajvvv ↗</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rajvardhan-w/" target="_blank" rel="noopener" class="channel">
+                        <span class="channel-label">LinkedIn</span>
+                        <span class="channel-value">Rajvardhan Wakharade ↗</span>
+                    </a>
+                    <a href="resume.pdf" target="_blank" rel="noopener" class="channel">
+                        <span class="channel-label">Resume</span>
+                        <span class="channel-value">Download PDF ↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-copy">© 2026 Rajvardhan Wakharade</p>
+                <div class="footer-links">
+                    <a href="https://github.com/rajvvv" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/rajvardhan-w/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+
+    <!-- Additional indexable photos: visually hidden, not display:none, so Google Images can still crawl them -->
+    <div class="visually-hidden">
+        <img src="images/rajvardhan-wakharade-profile.jpg" alt="Rajvardhan Wakharade profile photo, software engineer and CSE student at Vishwakarma University" width="400" height="400" loading="lazy">
+        <img src="images/raj-wakharde-pune.jpg" alt="Raj Wakharde, Pune based developer and Vishwakarma University student" width="400" height="400" loading="lazy">
+        <img src="images/rajvardhan-wakharde.jpg" alt="Rajvardhan Wakharade, software engineer and CSE student at Vishwakarma University" width="400" height="400" loading="lazy">
+        <img src="images/raj-wakharde.jpg" alt="Raj Wakharde, Pune based developer and Vishwakarma University student" width="400" height="400" loading="lazy">
+    </div>
+</body>
+</html>
